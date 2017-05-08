@@ -1,0 +1,32 @@
+body {
+  padding: 2em;
+  background: lightgray;
+}
+html {
+  font-size: 16px;
+  font-family: "Century Gothic", sans-serif;
+}
+* {box-sizing: border-box;
+}
+h1 {
+  color:darkblue;
+  font-size: 28pt;
+}
+form {
+  padding: 1em;
+  color: white;
+  background-color: limegreen;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
