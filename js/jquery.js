@@ -23,14 +23,42 @@
   document.getElementById("demo").innerHTML = res;
 }*/
 
-//To change the image SRC with click event:
-$('myImage').on({ 
-  'click': function()
-  $('#myImage')
- .attr("src","http://staticmap.openstreetmap.de/staticmap.php?size=1000x800&center=47.32959,-122.58059&zoom=19&markers=47.32959,-122.58059,ol-marker-gold&maptype=mapnik");
+
+//To change the image SRC:
+function myFunction() {
+  var value =$(this).val();
+}
+$(document).ready(function(){
+switch (expr) {
+  case 'Java':
+    console.log('Oranges are $0.59 a pound.');
+    break;
+  case 'Jax':
+    console.log('Apples are $0.32 a pound.');
+    break;
+  case 'Tides':
+    console.log('Bananas are $0.48 a pound.');
+    break;
+  case 'Harbor':
+    console.log('Cherries are $3.00 a pound.');
+    break;
+  default:
+    console.log('Sorry, Gig Harbor is closed.');
+}
+   event.preventDefault();
+console.log("Is there anything else you'd like?");
+
+//to read input of radio button
+$('input').on('click', myFunction());
+  
+//Tried to use attr   
+/*  $("myImage").on({
+    'click': function()
+  $("#myImage")
+ .attr('src','http://staticmap.openstreetmap.de/staticmap.php?size=1000x800&center=47.32959,-122.58059&zoom=19&markers=47.32959,-122.58059,ol-marker-gold&maptype=mapnik');
 }
     event.preventDefault();
-});
+});*/
 
 //Jax Salon:  http://www.openstreetmap.org/search?query=Jax%20Salon%20%26%20Spa#map=19/47.32959/-122.58059
 //Tides Tavern: http://www.openstreetmap.org/search?query=Tides%20Tavern#map=19/47.32925/-122.57836
